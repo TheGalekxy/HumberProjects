@@ -1,0 +1,81 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.header {
+    margin: 4vh auto;
+    font-size: 5em;
+}
+
+.teacher {
+    background-color: white;
+    margin: 1em auto
+}
+
+.listP {
+    border-top: 1px dotted black;
+    border-bottom: 1px dotted black;
+    padding: 2em 0px;
+}
+
+.teacherInfo {
+    display: block;
+    font-size: 2em;
+    border-radius: 25px;
+    padding: 20px;
+    width: 33%;
+    margin: 0px auto;
+    background-color: #e7e7e7;
+    color: black;
+    transition: all .2s ease-in-out;
+}
+
+.teacherInfo:hover{
+    color: deepskyblue;
+    transform: scale(1.1);
+}
+
+.listitem {
+    margin: 20px 20px;
+}
+
+.navlink {
+    display: block;
+    margin: 5vh auto 1vh auto;
+    font-size: 2em;
+    width: 33%;
+    border-radius: 25px;
+    background-color: lightskyblue;
+}
+
+.navlink:hover {
+    background-color: darkblue;
+    color: lightskyblue;
+}
+
+.teacherName {
+    margin: 6vh auto;
+    font-size: 3em;
+}
+
+.teacherMoreInfo {
+    margin: 2vh auto;
+    font-size: 1.5em;
+    display: block;
+}

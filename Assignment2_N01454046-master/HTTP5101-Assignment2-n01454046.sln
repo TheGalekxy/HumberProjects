@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTTP5101-Assignment2-n01454046", "HTTP5101-Assignment2-n01454046\HTTP5101-Assignment2-n01454046.csproj", "{CEC1F9EA-1B1F-4C25-8731-F34B8C238774}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEC1F9EA-1B1F-4C25-8731-F34B8C238774}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEC1F9EA-1B1F-4C25-8731-F34B8C238774}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEC1F9EA-1B1F-4C25-8731-F34B8C238774}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEC1F9EA-1B1F-4C25-8731-F34B8C238774}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C9036BBC-E731-43CF-9CFF-9D9102F32283}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>v-if If Statements</title>
+		<meta charset="UTF-8">
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<style>
+			.special {background:yellow; border: 1px dotted #fe0000; padding:30px; display:block; text-align:center;}
+			.important {font-weight:bold; font-size:30px;}
+		</style>
+	</head>
+	<body>
+	
+	<div id="app">
+		<span v-if="profile">
+			<div class="card">
+				<img v-if="profile.pic" v-bind:src="profile.pic" v-bind:alt="profile.alt" v-bind:title="profile.title">
+				<img v-else v-bind:src="profile.placeholder" v-bind:alt="profile.alt" v-bind:title="profile.title">
+				<div class="container">
+				  <h4><b>{{profile.fname}} {{profile.lname}} </b></h4>
+				  <p v-if="profile.desc">{{profile.desc}}</p>
+				  <p v-else>No Description Found</p>
+				  <p v-if="profile.bio">{{profile.bio}}</p>
+				  <p v-else>No Bio Found</p>
+				</div>
+			</div>
+		</span>
+		<span v-else>
+			No Profile Data found.
+		</span>
+	</div>
+	
+	<script>
+	var app = new Vue({
+		el: '#app',
+		
+		data:{
+
+		profile:{
+			fname: "Adam",
+			lname: "Galek",
+			desc: "Web Developer",
+			bio: "Adam is a Web Developer who loves creating websites.",
+			pic: "https://www.adamgalek.ca/assets/Adam_Galek2.png",
+			alt: "Headshot of Adam Galek",
+			title: "Adam Galek",
+			placeholder: "https://i.pinimg.com/originals/99/29/4a/99294a1f9c7e060973ee95fdb2a667b7.jpg"
+
+		}
+
+		}
+		
+	});
+	</script>
+	
+		<!--
+		//step 1: Read Code Above
+		//step 2: Does the profile show up?
+		
+		v-if="boolean_expression"
+		v-else-if="boolean_expression"
+		v-else
+		
+		
+		You can code an if, else if, else statement into your render using the v-if, v-else-if, v-else.
+		Just like in regular programming, v-else has no condition
+		
+		Notice how the "profile" object is null. Reminder that null is Falsey in the boolean context.
+		
+		ASYNCHRONOUS LEARNING EXERCISE
+		1. Use the profile object to store information about yourself {fname, lname, desc, bio, pic}
+		2. Create a figure, figcaption, and image markup which acts as a description for yourself
+			(Something like this https://www.w3schools.com/howto/howto_css_cards.asp)
+		3. Write conditionals if information is missing (i.e. 'no bio available' if bio is blank, generic image if no pic is found)
+		-->
+	</body>
+</html>

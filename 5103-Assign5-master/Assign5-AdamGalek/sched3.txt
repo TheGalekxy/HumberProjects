@@ -1,0 +1,9 @@
+<caption>Union Station</caption>
+<tr><th>Day</th><th>Open</th><th>Close</th></tr>
+<tr><td>Monday</td><td>CLOSED</td><td></td></tr>
+<tr><td>Tuesday</td><td>8</td><td>4</td></tr>
+<tr><td>Wednesday</td><td>9</td><td>5</td></tr>
+<tr><td>Thursday</td><td>9</td><td>5</td></tr>
+<tr><td>Friday</td><td>9</td><td>5</td></tr>
+<tr><td>Saturday</td><td>11</td><td>6</td></tr>
+<tr><td>Sunday</td><td>12</td><td>4</td></tr>

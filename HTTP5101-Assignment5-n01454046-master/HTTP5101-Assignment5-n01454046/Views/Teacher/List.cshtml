@@ -1,0 +1,28 @@
+﻿@model IEnumerable<HTTP5101_Assignment5_n01454046.Models.Teacher>
+
+@{
+    ViewBag.Title = "List";
+}
+
+<h2 class="header">Teachers</h2>
+
+<p class="listP">
+    This page shows a list of all of the Teachers on the School Database
+</p>
+
+<div id="containerlist">
+    <nav>
+        <a class="navlink" href="/Teacher/Add"> New Author </a>
+    </nav>
+    <h2> List of Teachers</h2>
+    @foreach (var teacher in Model)
+    {
+        <div class="listitem row">
+            <div class="col-md-12 teacher">
+                <a href="/Teacher/Show/@teacher.TeacherId" class="teacherInfo">@teacher.TeacherFname @teacher.TeacherLname</a>
+            </div>
+        </div>
+    }
+</div>
+
+<a class="navlink" href="../Home/Index"> Back To Home </a>

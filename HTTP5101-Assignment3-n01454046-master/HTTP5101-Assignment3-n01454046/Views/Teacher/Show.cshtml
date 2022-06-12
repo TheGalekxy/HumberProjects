@@ -1,0 +1,32 @@
+﻿@model HTTP5101_Assignment3_n01454046.Models.Teacher
+
+@{
+    ViewBag.Title = "Show";
+}
+
+
+
+
+<div id="containershow">
+    <h2 class="teacherName"> @Model.TeacherFname @Model.TeacherLname  </h2>
+    <p class="listP">
+        This page shows more detail about one teacher.
+    </p>
+    <p class="teacherMoreInfo">
+        Teacher Id: @Model.TeacherId
+    </p>
+    <p class="teacherMoreInfo">
+        Teacher Employee Number: @Model.TeacherEmployeeNumber
+    </p>
+    <p class="teacherMoreInfo">
+        Teacher Hire Date: @Model.TeacherHireDate
+    </p>
+    <p class="teacherMoreInfo">
+        Teacher Salary: @Model.TeacherSalary
+    </p>
+    <p class="teacherMoreInfo">
+        Teacher Classes: @Model.ClassName
+    </p>
+    <a class="navlink" href="/Teacher/List"> Back To Teachers </a>
+</div>
+

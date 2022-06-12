@@ -1,0 +1,35 @@
+﻿@model IEnumerable<PassionProject.Models.TeamDto>
+
+@{
+    ViewBag.Title = "View";
+}
+
+<h2>List Teams</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th class="text-center" id="no-border">
+            @Html.DisplayNameFor(model => model.TeamName)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.TeamName)
+            </td>
+
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.TeamID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.TeamID })
+
+            </td>
+        </tr>
+    }
+
+</table>

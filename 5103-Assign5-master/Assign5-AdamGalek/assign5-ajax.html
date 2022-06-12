@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Assign 5 | AJAX</title>
+	<style>.clear{clear:both;}#formDiv{width: 200px;float:left;margin-left: 20px;}#sched{width:200px;float:right;}#container{width: 440px;}table{border-collapse:collapse;}td{border:1px solid;text-align:center;}</style>
+	
+</head>
+<body>
+	<h1>Store Schedules</h1>
+
+	<!-- MAIN CONTAINER -->
+	<div id="container">
+
+		<!-- RADIO BUTTON FORM -->
+		<div id="formDiv">
+			<h2>Location</h2>
+			<form name="siteHours">
+				<p>
+					<label for="routeRb1">Old City Hall</label>
+					<input type="radio" id="routeRb1" name="routeRb" value="1"/>
+				</p>
+
+				<p>
+					<label for="routeRb2">Yonge Street</label>
+					<input type="radio"  id="routeRb2" name="routeRb" value="2"/>
+				</p>
+
+				<p>
+					<label for="routeRb3">Union Station</label>
+					<input type="radio"  id="routeRb3" name="routeRb" value="3"/>
+				</p>
+			</form>
+		</div>
+
+		<!-- OUTPUT SCHEDULE -->
+		<div id="sched">
+			<h2>Schedule</h2>
+			<table id="schedTbl">
+			</table>
+		</div>
+
+		<br class="clear" />
+	</div><!-- END MAIN CONTAINER -->
+
+	<script src="assign5-ajax.js"></script>
+</body>
+</html>

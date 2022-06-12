@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tickets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tickets.xsd">
+  <ticket>
+    <userid>1</userid>
+    <ticketid>1</ticketid>
+    <datetimeissued>2021-02-06T09:30:14</datetimeissued>
+    <subject>Computer Stopped Working</subject>
+    <status>Open</status>
+    <messages>
+      <message>
+        <datetime>2021-02-06T09:34:25</datetime>
+        <content>My Computer Got a Blue Screen of death.</content>
+        <senderId>1</senderId>
+      </message>
+      <message>
+        <datetime>2021-02-06T09:34:25</datetime>
+        <content>Okay, we can help you with that.</content>
+        <senderId>2</senderId>
+      </message>
+    </messages>
+  </ticket>
+  <ticket>
+    <userid>2</userid>
+    <ticketid>2</ticketid>
+    <datetimeissued>2021-02-06T09:30:14</datetimeissued>
+    <subject>Laptop Died</subject>
+    <status>Open</status>
+    <messages>
+      <message>
+        <datetime>2021-02-06T09:34:25</datetime>
+        <content>My computer got really hot and then shut down and won't turn back on.</content>
+        <senderId>2</senderId>
+      </message>
+    </messages>
+  </ticket>
+</tickets>

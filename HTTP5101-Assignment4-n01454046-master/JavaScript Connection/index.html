@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Add or Delete a teacher from the School Database</h1>
+
+    <label for="teacherAddForm">Add a teacher to the Database </label>
+    <form method="POST" action="https://localhost:44315/Teacher/Create" name="teacherAddForm"></form>
+        <div>
+            <label for="TeacherFname">First Name:</label>
+            <input type="text" name="TeacherFname" id="TeacherFname" />
+        </div>
+        <div>
+            <label for="TeacherLname">Last Name:</label>
+            <input type="text" name="TeacherLname" id="TeacherLname" />
+        </div>
+        <div>
+            <label for="TeacherEmployeeNumber">Employee Number:</label>
+            <textarea name="TeacherEmployeeNumber" id="TeacherEmployeeNumber"></textarea>
+        </div>
+        <div>
+            <button onclick="AddTeacher()"> Add a Teacher! </button>
+        </div>
+    </form>
+
+    <label for="teacherDeleteForm">Delete a teacher from the Database </label>
+    <form method="POST" action="https://localhost:44315/api/TeacherData/DeleteTeacher/" name="teacherDeleteForm">
+        <div>
+            <label for="TeacherId">Teacher Id:</label>
+            <input type="number" name="TeacherId" id="TeacherId">
+        </div>
+        <div>
+            <button onclick="DeleteTeacher()"> Delete a Teacher! </button>
+        </div>
+    </form>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

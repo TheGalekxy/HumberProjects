@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<users xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="users.xsd">
+    <user role="client">
+        <id>1</id>
+        <username>TheGalekxy</username>
+        <password>$2y$10$UTynr11Tv2g7Y3nbLtI3h.2Jy/yOb3jURkdeegsukV8g8lwiZMn/e</password>
+        <email>galekxy13@hotmail.com</email>
+        <name>
+            <first>Adam</first>
+            <last>Galek</last>
+        </name>
+    </user>
+    <user role="admin">
+        <id>2</id>
+        <username>Vault</username>
+        <password>$2y$10$hIXN2evtJZwCij82Icv4QeAOSyJbl9foMRD8DNufoaX387mCvRMHG</password>
+        <email>vault@gmail.com</email>
+        <name>
+            <first>Patrick</first>
+            <last>Chaloup</last>
+        </name>
+    </user>
+    <user role="admin">
+        <id>3</id>
+        <username>CharCharBinks</username>
+        <password>$2y$10$TTDYjeMHHCKnlpaSkn9PbOlGShV/WFoBlpNrHDkhnlABt1yGStphu</password>
+        <email>charchar@gmail.com</email>
+        <name>
+            <first>Charlotte</first>
+            <last>Bee</last>
+        </name>
+    </user>
+</users>

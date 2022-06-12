@@ -1,0 +1,39 @@
+#game {
+    text-align: center;
+}
+
+.dice-button {
+    /* position: relative; */
+    /* bottom: 150px; */
+    /* right: 0px; */
+    /* margin-top: 20px; */
+}
+
+.dice-div {
+    position: relative;
+    bottom: 150px;
+}
+
+table {
+    margin: auto;
+    position: relative;
+}
+
+.boardgame-tile {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+}
+
+.blank {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+}
+
+.player-piece {
+    border-radius:50%; 
+    background:Grey; 
+    border:1px solid #ccc; 
+    display:inline-block;
+}

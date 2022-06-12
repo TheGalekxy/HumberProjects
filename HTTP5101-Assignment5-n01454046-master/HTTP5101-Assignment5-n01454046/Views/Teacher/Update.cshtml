@@ -1,0 +1,33 @@
+﻿@model HTTP5101_Assignment5_n01454046.Models.Teacher
+
+@{
+    ViewBag.Title = "Update";
+}
+
+
+<div id="containershow">
+    <nav>
+        <a class="navlink" href="/Teacher/Show/@Model.TeacherId">Back</a>
+    </nav>
+    <h2>Update Teacher</h2>
+    <!-- <form method="POST" action="/Teacher/Update/@Model.TeacherId"> -->
+    <div>
+        <label for="TeacherFname">First Name:</label>
+        <input type="text" name="TeacherFname" id="TeacherFname" value="@Model.TeacherFname" />
+    </div>
+    <div>
+        <label for="TeacherLname">Last Name:</label>
+        <input type="text" name="TeacherLname" id="TeacherLname" value="@Model.TeacherLname" />
+    </div>
+    <div>
+        <label for="TeacherEmployeeNumber">Employee Number:</label>
+        <input type="text" name="TeacherEmployeeNumber" id="TeacherEmployeeNumber" value="@Model.TeacherEmployeeNumber" />
+    </div>
+    <div>
+        <!-- adding ajax + javascript functionality -->
+        <button onclick="UpdateTeacher(@Model.TeacherId);">Update Teacher</button>
+    </div>
+    <!-- </form> -->
+</div>
+
+

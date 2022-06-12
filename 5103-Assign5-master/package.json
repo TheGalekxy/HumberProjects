@@ -1,0 +1,23 @@
+{
+  "name": "A5-AJAX-YOURNAME",
+  "version": "1.0.0",
+  "description": "",
+  "main": "assign5-ajax.js",
+  "scripts": {
+    "deploy": "gh-pages -d Assign5-AdamGalek"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheGalekxy/5103-Assign5.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheGalekxy/5103-Assign5/issues"
+  },
+  "homepage": "https://TheGalekxy.github.io/5103-Assign5",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}

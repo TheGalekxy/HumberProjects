@@ -1,0 +1,37 @@
+﻿@model PassionProject.Models.ViewModels.ShowTeam
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h4 class="margin-top">Team @Model.team.TeamName</h4>
+
+<div>@Html.ActionLink("Delete", "DeleteConfirm", new { id = Model.team.TeamID })</div>
+<hr />
+
+<div style="overflow:hidden;">
+    <div class="row">
+        <div class="col-md-12 margin">
+            <h4>Players:</h4>
+            <div class="flex no-margin">
+                @foreach (var player in Model.teamplayers)
+                {
+                    <div class="col-md-1">
+                        @Html.ActionLink(
+                        player.PlayerName + " " + player.PlayerRank,
+                        "Details",
+                        "Player",
+                        new { id = player.PlayerID },
+                        new { })
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+    <div style="clear:both;"></div>
+
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.team.TeamID }) |
+    @Html.ActionLink("Back to List", "List")
+</p>
